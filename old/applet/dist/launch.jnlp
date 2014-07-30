@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jnlp codebase="$$codebase" href="launch.jnlp" spec="1.0+">
+    <information>
+        <title>applet</title>
+        <vendor>brandan</vendor>
+        <homepage href=""/>
+        <description>applet</description>
+        <description kind="short">applet</description>
+    </information>
+    <update check="always"/>
+    <security>
+<all-permissions/>
+</security>
+    <resources>
+        <j2se java-vm-args="-Djava.security.policy=applet.policy" version="1.7+"/>
+        <jar href="applet.jar" main="true"/>
+    </resources>
+    <application-desc main-class="applet.Applet">
+    </application-desc>
+</jnlp>
